@@ -1,7 +1,13 @@
 name: Build-Publish
 
 on:
+  workflow_dispatch:
+    branches:
+      - 'main'
   push:
+    branches:
+      - 'main'
+  pull_request:
     branches:
       - 'main'
 
